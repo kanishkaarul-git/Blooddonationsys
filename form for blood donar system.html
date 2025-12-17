@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donor System</title>
+</head>
+<body>
+
+    <h1>Blood Donor System</h1>
+
+    <h2>1. Donor Registration Form</h2>
+       <form action="blood_donor.php" method="POST">
+<fieldset>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="location">Location (City/Area):</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="bloodType">Blood Type:</label><br>
+        <select id="bloodType" name="bloodType" required>
+            <option value="">Select Blood Type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+
+        <button type="submit">Register as Donor</button>
+
+    </form> 
+
+    <hr>
+    <h2>2. Search for Donors</h2>
+    <form action="#" method="GET">
+        <label for="searchType">Search by Blood Type:</label><br>
+        <select id="searchType" name="searchType">
+            <option value="">Select Blood Type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+
+        <label for="searchLocation">Search by Location (City/Area):</label><br>
+        <input type="text" id="searchLocation" name="searchLocation" placeholder="e.g., Chennai"><br><br>
+
+        <button type="submit">Search Donors</button>
+   </fieldset> 
+</form>
+
+    
+</body>
+</html>
